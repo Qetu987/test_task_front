@@ -1,0 +1,61 @@
+/*
+	здесь описываем все что связано с сеткой товаров
+	так как товаров в будущем может быть много, было принято решение 
+	не использовать его как блок в основной сетке сайта а создать подсетку
+
+	так как классов много вынесено на товары то нужно создать отдельный файл для них
+*/
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 404px;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . .";
+  grid-area: items;
+}
+
+.items_area_h{ height: 404px; }
+
+.item_block{
+	border-radius: 16px;
+}
+
+.item_image{
+	margin: 24px 24px 0px 24px;
+	height: 200px;
+	width: 258px;
+	border-radius: 16px;
+}
+
+.item_title{
+	text-align: center;
+
+	font-size: 24px;
+	line-height: 28px;
+
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+.item_desc{
+	width: 262px;
+	margin: 0px 22px 24px 22px;
+
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.item_button{
+	width: 88px;
+	height: 24px;
+
+	border-radius: 8px;
+}
+
+.item_button_text{
+	font-size: 14px;
+	line-height: 16px;
+}

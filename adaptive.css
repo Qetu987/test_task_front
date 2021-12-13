@@ -1,0 +1,77 @@
+/*
+	здесь будем описывать всю адаптацию для разных устройств
+*/
+
+@media screen and (max-width: 1366px){
+
+	.container {
+		width: 1114px;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 261px;
+		gap: 24px 24px;
+		grid-auto-flow: row;
+		grid-template-areas:
+		"menu menu social"
+		"title title title"
+		"items items items"
+		"footer footer footer";
+	}
+
+	.items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 24px 24px;
+		grid-auto-flow: row;
+		grid-template-areas:
+		". .";
+		grid-area: items;
+	}
+
+	.logo{ display: none; }
+
+}
+
+
+@media screen and (max-width: 840px){
+
+	.container {
+		width: 516px;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 24px 24px;
+		grid-auto-flow: row;
+		grid-template-areas:
+		"menu"
+		"logo"
+		"social"
+		"title"
+		"items"
+		"footer";
+	}
+
+	.items {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		gap: 24px 24px;
+		grid-auto-flow: row;
+		grid-template-areas:
+		".";
+		grid-area: items;
+	}
+
+	.logo{ display: flex; }
+
+	.menu_row{
+		display: block;
+		text-align: center;
+
+	}
+
+	.menu_row p{
+		margin: 10px
+	}
+}

@@ -1,0 +1,49 @@
+/*
+	здесь пишем базовые классы которые в дальнейшем можем применить во многих блоках
+	описываем основные цвета и отступы
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: color .2s, background .2s;
+}
+
+p, h1{
+  color: #232323;
+}
+
+
+
+a p:hover{
+  color: red;
+}
+
+a div:hover{
+  background: #6e6e6e;
+}
+
+a div:hover p{
+  color: red;
+}
+
+
+
+.border{ border-radius: 16px }
+
+.main_bg{ background: #FAFFBF; }
+
+.sub_bg{ background: #D6D6D6; }
+
+.justify_center{
+  display: flex;
+  justify-content: center;
+}
+
+.align_center{
+  display: flex;
+  align-items: center;
+}
+
+.h90{ min-height: 90px; }

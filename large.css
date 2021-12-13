@@ -1,0 +1,60 @@
+/*
+	здесь будем описывать все что касается большого монитора
+*/
+
+.container {
+  width: 1296px;
+
+  display: grid;
+  grid-template-columns: 198px 1fr 1fr 198px;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo menu menu social"
+    "title title title title"
+    "items items items items"
+    "footer footer footer footer";
+}
+
+/* header */
+
+.logo { grid-area: logo; }
+
+.menu { grid-area: menu; }
+
+.menu_row{
+  width: 510px;
+  justify-content: space-between;
+}
+
+.menu_items{ font-size: 14px; }
+
+.social { grid-area: social; }
+
+.social_block{ 
+  width: 122px;
+  justify-content: space-between;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+/* end header */
+
+
+
+.title { grid-area: title; }
+
+.title_block{
+	width: 90%;
+	height: 50px;
+}
+
+.footer { 
+	grid-area: footer; 
+	height: 180px;
+}
+
